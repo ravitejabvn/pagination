@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.table-container {
+	width: 90%;
+	margin: auto;
+}
+.table {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.table:nth-child(odd) {
+  background: #1c3346;
+}
+
+.table:nth-child(even) {
+  color: black;
+}
+
+.table-cell {
+	box-sizing: border-box;
+  padding: 15px;
+  flex: 1;
+  width: 100%;
+  border: solid 1px #428bca;
+  border-right: none;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.table-cell:last-child {
+  border-right: 1px solid #1f988c;
+}
+
+.table-cell:first-child {
+  border-left: 1px solid #1f988c;
+}
+
+.table:last-child .table-cell {
+  border-bottom: 2px solid #1f988c
+}
+
+.table-head-cell {
+  cursor: pointer;
+	box-sizing: border-box;
+	padding: 15px;
+	flex: 1;
+	width: 100%;
+	border: solid 1px #1f988c;
+	border-right: none;
+	border-bottom: none;
+	background: fade(slategrey,20%);
+	font-size: 16px;
+	font-weight: bold;
+	background: #25ad9f;
+}
+
+.table-head-cell i {
+  float: right;
+}
+i.opacity {
+  opacity: 0.5;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.pagination {
+	margin: 10px;
+	border: 1px solid #428bca;
+	display: inline-block;
+	padding: 20px 0px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+span {
+  padding: 20px;
+  border-right: 1px solid #428bca;
+  color: black;
+}
+span:last-child {
+  border-right: none;
+}
+span.active {
+  background: #428bca;
+  color: #ffffff;
+}
+
+.pagination span:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pagination span:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.span-disabled {
+  cursor: not-allowed;
+  background: #98a297;
+  pointer-events: none;
+}
+
+.paging-number {
+  width: 300px;
+  outline: none;
+  border: 1px solid #428bca;
+  height: 50px;
+  font-size: 14px;
+}
